@@ -1,22 +1,23 @@
 include <lib/CornerCutout.scad>
 
-usbWidth = 20;
-usbHeight = 10;
-cableDiameter = 4;
+usbWidth = 12;
+usbHeight = 4.5;
+cableDiameter = 3.5;
 
 boltDiameter = 3;
-boltHeadDiameter = 10;
-boltHeadThickness = 3;
+boltHeadDiameter = 6;
+boltHeadThickness = 2.2;
 boltHoleBacking = 0.4;
 
 cableSupportLength = 5;
-usbSupportLength = 5;
-wallThickness = 2;
+usbSupportLength = 0;
+wallThickness = 2.2;
 cornerRadius = 3;
 
 width = cableSupportLength + boltHeadDiameter + wallThickness + usbWidth + wallThickness;
 length = wallThickness + cableDiameter + wallThickness + boltHeadDiameter + usbSupportLength;
 thickness = wallThickness + usbHeight + wallThickness;
+$fn = 20;
 
 // preview();
 printPlate();
